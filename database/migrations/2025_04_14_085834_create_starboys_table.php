@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('starboys', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('old');
+            $table->string('tier');
+            $table->string('role');
+            $table->integer('level');
             $table->timestamps();
         });
     }
